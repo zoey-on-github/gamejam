@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dr3w0evu3yvs"]
+
+[ext_resource type="Script" uid="uid://d4af3814k5w3a" path="res://titleScreen.gd" id="1_sf2e2"]
+
+[node name="TitleScreen" type="Control" unique_id=358452972]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1617604465]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 210.0
+offset_right = 769.0
+offset_bottom = 266.0
+text = "cancer game
+(in progress title)"
+
+[node name="Button" type="Button" parent="." unique_id=387851538]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 263.0
+offset_right = 697.0
+offset_bottom = 305.0
+text = "play"
+script = ExtResource("1_sf2e2")
+
+[node name="Button2" type="Button" parent="." unique_id=479366645]
+layout_mode = 0
+offset_left = 457.0
+offset_top = 324.0
+offset_right = 698.0
+offset_bottom = 366.0
+text = "exit"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
