@@ -79,4 +79,6 @@ texture = ExtResource("2_onrkg")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/CollisionShape2D" unique_id=1109849426]
 scale = Vector2(2.8749995, 2.6785715)
 sprite_frames = SubResource("SpriteFrames_onrkg")
-frame_progress = 0.8083386
+frame_progress = 0.29078135
+
+[node name="Timer" type="Timer" parent="." unique_id=864569095]
