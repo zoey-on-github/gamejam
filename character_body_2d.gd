@@ -21,5 +21,14 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	if(direction == -1.0):
+		# means youre going left
+		$CollisionShape2D/AnimatedSprite2D.play()
+		$CollisionShape2D/AnimatedSprite2D.flip_h = false
+	elif(direction== 1.0):
+		# means youre going right
+		$CollisionShape2D/AnimatedSprite2D.play()
+		$CollisionShape2D/AnimatedSprite2D.flip_h = true
+	else:
+		$CollisionShape2D/AnimatedSprite2D.stop()
 	move_and_slide()
